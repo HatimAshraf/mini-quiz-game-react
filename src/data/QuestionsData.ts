@@ -1,6 +1,4 @@
-import { Question } from "../types/quiz";
-
-export const QUESTIONS : Question[] = [
+export const QUESTIONS = [
   {
     question: "What is JSX in React?",
     options: [
@@ -9,17 +7,17 @@ export const QUESTIONS : Question[] = [
       "A new HTML version",
       "A CSS preprocessor"
     ],
-    answer: 0
+    answer: 1
   },
   {
     question: "Which hook is used to handle side effects in React?",
     options: ["useState", "useEffect", "useRef", "useMemo"],
-    answer: 1
+    answer: 2
   },
   {
     question: "What does `useRef` return?",
     options: ["A mutable object", "A function", "An array", "A boolean value"],
-    answer: 0
+    answer: 3
   },
   {
     question: "What is the purpose of React keys in lists?",
@@ -49,7 +47,7 @@ export const QUESTIONS : Question[] = [
   {
     question: "Which React hook is used to memoize values?",
     options: ["useMemo", "useEffect", "useContext", "useState"],
-    answer: 0
+    answer: 2
   },
   {
     question: "How do you create a functional component in React?",
@@ -57,9 +55,9 @@ export const QUESTIONS : Question[] = [
       "function MyComponent() {}",
       "class MyComponent extends React.Component {}",
       "React.createComponent()",
-      "new ReactComponent()"
+      "const MyComponent = () => {}"
     ],
-    answer: 0
+    answer: 3
   },
   {
     question: "Which of these is NOT a React hook?",
@@ -72,8 +70,8 @@ export const QUESTIONS : Question[] = [
       "Using the ternary operator",
       "Using a switch statement",
       "Using a for loop",
-      "Using setTimeout()"
+      "Using an if statement"
     ],
-    answer: 0
+    answer: 3
   }
 ];
