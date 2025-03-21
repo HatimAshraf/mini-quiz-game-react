@@ -7,11 +7,9 @@ interface NewGameProps {
 function NewGame({ onStart }: NewGameProps) {
   return (
     <div className='text-center p-8'>
-      <h1 className='text-4xl font-bold text-gray-800 mb-6'>
-        Coding Quiz Game
-      </h1>
+      <h1 className='text-4xl font-bold text-gray-800 mb-6'>Quiz Game</h1>
       <p className='text-gray-800 mb-8'>
-        Test your coding knowledge with this 10 question quiz.
+        Test your knowledge with this 10 question quiz.
       </p>
       <button
         onClick={onStart}

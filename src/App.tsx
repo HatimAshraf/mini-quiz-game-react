@@ -11,7 +11,7 @@ function App() {
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
-  const [timeLeft, setTimeLeft] = useState<number>(45);
+  const [timeLeft, setTimeLeft] = useState<number>(600);
 
   useEffect(() => {
     let timer: number;
@@ -27,7 +27,7 @@ function App() {
 
   const handleStart = () => {
     setGameState('Playing');
-    setTimeLeft(30);
+    setTimeLeft(600);
     setScore(0);
     setCurrentQuestion(0);
     setSelectedAnswer(null);
